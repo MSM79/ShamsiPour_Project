@@ -1,0 +1,35 @@
+@import '~Root/css/mixins';
+
+:local(.container) {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  > div {
+    background: #333;
+    margin: 25px;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+
+    p {
+      color: red;
+    }
+  }
+
+  input {
+    .input();
+    margin: 20px;
+    width: 220px;
+  }
+
+  button {
+    width: 150px;
+  }
+}
+
+:local(.title) {
+  .title();
+}

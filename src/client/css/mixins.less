@@ -1,0 +1,117 @@
+@import 'colors';
+
+.boxShadow() {
+box-shadow: 8px 14px 38px rgba(39,44,49,.06),1px 3px 8px rgba(39,44,49,.03);
+}
+
+.textshadow() {
+  text-shadow: 0 2px 5px rgba(0,0,0,0.8);
+}
+
+.title() {
+  background: #333;
+  padding: 5px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-weight: 600;
+}
+
+.input() {
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  padding: 7px;
+  transition: 0.2s;
+
+  &:hover {
+    border: 1px solid @green-base;
+    background-color: transparent;
+  }
+
+  &:active, &:focus {
+    border: 1px solid @green-base;
+    background-color: transparent;
+  }
+}
+
+.header() {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: @green-base;
+  padding: 20px;
+  z-index: 2;
+
+  > a {
+    font-family: IRANSans;
+    font-weight: 500;
+    color: #fff;
+    font-size: 30px;
+    z-index: 2;
+    text-shadow:1px 3px 3px rgba(0,0,0,0.3);
+    transition: 0.3s;
+
+    &:active, &:hover {
+      text-shadow:1px 2px 2px rgba(0,0,0,0.1);
+      transform: translate3d(0,-1px,0);
+      transition: all 0.2s ease;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+
+    li {
+      margin: 0 30px;
+      display: inline;
+
+      a {
+        color: #fff;
+        position: relative;
+        display: inline-block;
+
+        &::before, &::after {
+          position: absolute;
+          color: transparent;
+          display: flex;
+          align-content: center;
+          align-items: center;
+          align-self: center;
+          top: 53%;
+          transition: all 0.3s;
+        }
+
+        &::before {
+          content: '>';
+          left: -15px;
+          transform: translate(-20px, -50%) scale(0.5, 0.5);
+        }
+
+        &::after {
+          content: ' </';
+          right: -20px;
+          transform: translate(20px, -50%) scale(0.5, 0.5);
+        }
+
+        &:hover::before, &:hover::after {
+          color: white;
+          transform: translate(0px, -50%) scale(1, 1);
+        }
+
+        &:active, &:hover {
+          color: @grey-base;
+        }
+      }
+    }
+  }
+}
+
+.titleText() {
+  font-size: 18px;
+  border-bottom: 1px solid #bbb;
+  color: #444;
+}

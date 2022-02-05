@@ -1,0 +1,57 @@
+@import '~Root/css/mixins';
+
+:local(.container) {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+:local(.comment) {
+  margin: 20px 0;
+  width: 65%;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  .boxShadow();
+
+  p {
+    max-width: 200px;
+    word-break: break-all;
+  }
+
+  button {
+    display: block;
+  }
+
+  textarea {
+    border: 1px solid #eee;
+    border-radius: 3px;
+    padding: 5px;
+
+    &:hover, &:active {
+      border: 1px solid #aaa;
+    }
+  }
+}
+
+:local(.title) {
+  font-size: 30px;
+  color: #222;
+  margin: 20px 0;
+  text-align: center;
+}
+
+@media (min-width: 120px) and (max-width: 580px) {
+  :local(.comment) {
+    width: 90%;
+    text-align: center;
+    flex-direction: column;
+
+    > div {
+      margin: 20px 0;
+    }
+  }
+}

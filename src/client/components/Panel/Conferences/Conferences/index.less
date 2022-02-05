@@ -1,0 +1,64 @@
+@import '~Root/css/mixins';
+
+:local(.container) {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+:local(.allconfer) {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+:local(.conf) {
+  width: 40%;
+  height: auto;
+  background-color: #40AA54;
+  padding: 10px;
+  .boxShadow();
+  border-radius: 5px;
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  color: #fff;
+
+  div {
+    display: flex;
+
+    p {
+      margin: 15px;
+      color: #fff;
+    }
+
+  }
+
+  span {
+    color: #444;
+    font-size: 14px;
+  }
+}
+
+:local(.pc) {
+  color: #fe2018;
+  font-weight: 600;
+}
+
+:local(.title) {
+  .title();
+}
+
+@media (min-width: 120px) and (max-width: 580px) {
+  :local(.conf) {
+    width: 90%;
+  }
+}

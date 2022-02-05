@@ -1,0 +1,34 @@
+@import '~Root/css/colors';
+@import '~Root/css/mixins';
+
+:local(.footer) {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: @black-base;
+  color: white;
+  padding: 10px 40px;
+
+  a {
+    color: #777;
+
+    &:hover, &:active {
+      color: white;
+    }
+  }
+
+  input {
+    .input();
+  }
+}
+
+@media (min-width: 120px) and (max-width: 580px) {
+  :local(.footer) {
+    margin: 0;
+    padding: 10px;
+    font-size: 13px;
+    flex-direction: column;
+  }
+}

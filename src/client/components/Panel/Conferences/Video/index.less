@@ -1,0 +1,28 @@
+@import '~Root/css/colors';
+@import '~Root/css/mixins';
+
+:local(.container) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  > * {
+    margin: 10px 0;
+  }
+
+  textarea {
+    .input();
+    direction: ltr;
+    font-family: Arial, sans-serif;
+  }
+}
+
+:local(.user) {
+  color: @blue-base;
+
+  &:hover, &:active {
+    color: @blue-3;
+  }
+}

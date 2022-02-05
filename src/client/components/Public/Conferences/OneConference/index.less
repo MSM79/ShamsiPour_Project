@@ -1,0 +1,89 @@
+@import '~Root/css/colors';
+@import '~Root/css/mixins';
+
+:local(.container) {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  > div:first-child {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}
+
+:local(.avatarImage) {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+:local(.faded) {
+  color: #333;
+  font-size: 14px;
+}
+
+:local(.username) {
+  color: @blue-base;
+}
+
+:local(.conferenceImage) {
+  margin: 20px 0;
+  width: 50%;
+  .boxShadow();
+}
+
+:local(.title) {
+  .title();
+}
+
+:local(.userconf) {
+  background: #40AA54;
+  .boxShadow();
+  border-radius: 5px;
+  width: 50%;
+  margin: 20px auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    display: flex;
+
+    p {
+      margin: 5px;
+    }
+
+  }
+}
+
+:local(.rowtime) {
+  display: flex;
+  flex-direction: row;
+
+  p {
+    margin: 10px;
+  }
+
+}
+
+:local(.infoconf) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #40AA54;
+  width: 50%;
+  margin: 20px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+:local(.providers) {
+  width: 100%;
+}

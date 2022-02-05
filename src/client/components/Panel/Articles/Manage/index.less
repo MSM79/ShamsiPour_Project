@@ -1,0 +1,47 @@
+@import "~Root/css/colors";
+@import "~Root/css/mixins";
+
+:local(.container) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    font-size: 45px;
+    color: #333;
+  }
+}
+
+:local(.articles) {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  > div {
+    width: 40%;
+    margin: 20px;
+  }
+}
+
+:local(.title) {
+  .title();
+}
+
+@media (min-width: 120px) and (max-width: 580px) {
+  :local(.container) {
+    flex-direction: column;
+  }
+
+  :local(.articles) {
+    flex-direction: column;
+
+    > div {
+      width: 95%;
+      margin: 5px;
+      padding-bottom: 30px;
+    }
+  }
+}

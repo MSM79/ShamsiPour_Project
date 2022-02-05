@@ -1,0 +1,119 @@
+@import '~Root/css/colors';
+
+:local(.container) {
+  width: 100%;
+
+  }
+
+:local(.top) {
+  background-image: url(/static/images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 550px;
+
+  h1 {
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 2px 0 10px black;
+    font-weight: 500;
+  }
+}
+
+:local(.developerImage) {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+:local(.developerRole) {
+  font-size: 45px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+:local(.icons) {
+  display: flex;
+  justify-content: center;
+
+  a {
+    font-size: 30px;
+    margin: 0 5px;
+    color: #111;
+
+    &:hover, &:active {
+      color: black;
+    }
+  }
+}
+
+:local(.developersPart) {
+  width: 100%;
+  height: 100vh;
+  background-color: @green-base;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:local(.developersInfo) {
+  display: flex;
+  justify-content: center;
+
+  > div {
+    margin: 0 20px;
+  }
+}
+
+:local(.developerInfo) {
+  width: 300px;
+  height: auto;
+  background-color: @yellow-3;
+  border-radius: 100% 100% 0 0;
+
+  h1 {
+    font-size: 25px;
+    color: #151515;
+    font-weight: 800;
+  }
+
+  p {
+    color: #444;
+    font-size: 15px;
+  }
+}
+
+:local(.msm) {
+ object-fit: cover;
+}
+
+@media (min-width: 120px) and (max-width: 580px) {
+  :local(.developersInfo) {
+    flex-direction: column;
+    justify-content: center;
+    }
+
+  :local(.developersPart) {
+    height: auto;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+
+  :local(.container) {
+    width: 100%;
+  }
+
+  :local(.top) {
+  height: 400px;
+
+    h1 {
+      font-size: 35px;
+      text-align: center;
+    }
+  }
+
+}

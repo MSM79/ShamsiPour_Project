@@ -1,0 +1,28 @@
+@import '~Root/css/colors';
+
+:local(.userAvatar) {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 10px auto;
+  object-fit: cover;
+}
+
+:local(.userInfo) {
+  width: 200px;
+  background-color: @black-base;
+  color: white;
+  font-size: 25px;
+  height: 87.1vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  a {
+    color: @blue-2;
+
+    &:hover, &:active {
+      color: @blue-3;
+    }
+  }
+}

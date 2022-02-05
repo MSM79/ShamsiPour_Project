@@ -1,0 +1,16 @@
+@import '~Root/css/mixins';
+
+:local(.box) {
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+
+  .boxShadow();
+}
+
+@media (min-width: 120px) and (max-width: 580px) {
+  :local(.box) {
+    padding: 5px;
+    margin: 10px auto;
+  }
+}

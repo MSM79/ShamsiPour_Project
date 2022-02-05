@@ -1,0 +1,29 @@
+:local(.container) {
+  margin: 0 auto;
+  text-align: center;
+}
+
+:local(.articles) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  > div {
+    margin: 20px;
+    width: 50%;
+  }
+}
+
+:local(.title) {
+  text-align: center;
+  font-size: 30px;
+  color: #222;
+  margin: 20px 0;
+}
+
+@media (min-width: 120px) and (max-width: 580px) {
+  :local(.articles) > div {
+    width: 90%;
+  }
+}
