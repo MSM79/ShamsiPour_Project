@@ -115,17 +115,17 @@ class ConferencesHome extends Component {
     if (this.state.loading) {
       return <LoadingProgress />;
     }
-        
-      
+
+
     return (
       <div className={styles.container}>
-     
+
         {this.props.conferences.length ?
-          <h1 className={styles.title}>کنفرانس های اخیر</h1> :
-          <h1>کنفرانسی وجود ندارد</h1>
+          <h1 className={styles.title}>رویداد های اخیر</h1> :
+          <h1>رویدادی وجود ندارد</h1>
         }
         <div className={styles.droww}>
-        
+
         {this.props.conferences.map((v, i) =>
           <div key={i} className={styles.conf}>
             <div className={styles.user}>

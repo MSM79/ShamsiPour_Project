@@ -114,15 +114,15 @@ class Conference extends Component {
           </Link>
         </div>
 
-        <h1 className={styles.title}>اطلاعات کنفرانس</h1>
+        <h1 className={styles.title}>اطلاعات رویداد</h1>
         <div className={styles.infoconf}>
           <h3>عنوان : {this.state.conference.title}</h3>
           <div className={styles.rowtime}>
-            <p>شروع کنفرانس: {this.state.conference.start}</p>
-            <p>اتمام کنفرانس: {this.state.conference.end}</p>
+            <p>شروع رویداد : {this.state.conference.start}</p>
+            <p>اتمام رویداد :  {this.state.conference.end}</p>
           </div>
           <p>
-            {this.state.conference.done ? 'کنفرانس به اتمام رسیده است' : ''}
+            {this.state.conference.done ? 'رویداد به اتمام رسیده است' : ''}
           </p>
 
           <p className={styles.faded}>
@@ -135,7 +135,7 @@ class Conference extends Component {
             <Button
               color='black'
               handleClick={this.attend(this.state.conference._id)}>
-              حظور در کنفرانس
+              حضور در رویداد
             </Button> :
             ''
           }
@@ -150,7 +150,7 @@ class Conference extends Component {
           )}
 
           {this.state.conference.embeds.length ?
-            <p>مطالب دیگر در باره این کنفرانس</p> :
+            <p>مطالب دیگر درباره رویداد</p> :
             ''
           }
 

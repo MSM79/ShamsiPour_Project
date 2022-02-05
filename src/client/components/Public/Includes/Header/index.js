@@ -29,7 +29,7 @@ class Header extends Component {
     const links = [
       {
         to: '/conferences',
-        text: 'کنفرانس ها'
+        text:  'رویداد'
       },
       {
         to: '/articles',
