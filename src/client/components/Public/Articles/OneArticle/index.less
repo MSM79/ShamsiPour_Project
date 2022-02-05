@@ -90,10 +90,10 @@
 
 :local(.comment) {
   width: 60%;
-  padding: 10px;
+  padding: 10px 20px;
   background-color: @green-base;
-  border-radius: 5px;
-  margin: 20px  auto;
+  border-radius: 3px;
+  margin: 40px  auto;
   .boxShadow();
   display: flex;
   justify-content: center;
@@ -107,12 +107,19 @@
   textarea {
     .input();
     margin: 20px 10px;
-    width: 80%;
+    width: 94%;
     color: rgba(0,0,0,.5);
     cursor: text;
+    border: none;
 
     &:focus {
       color: #444;
+      background-color: #fff;
+      border: none;
+    }
+    &:hover {
+      background-color: #fff;
+      border: none;
     }
   }
 
@@ -121,9 +128,17 @@
     .input();
     margin: 20px 10px;
     color: rgba(0,0,0,.5);
+    border: none;
 
     &:focus {
       color: #444;
+      background-color: #fff;
+      border: none;
+    }
+
+    &:hover {
+      background-color: #fff;
+      border: none;
     }
   }
 
@@ -271,6 +286,7 @@
   color: red;
   transition: font-size 300ms;
 
+
   &:hover, &:active {
     font-size: 29px
   }
@@ -295,6 +311,7 @@
   p {
     margin-right: 12px;
     font-size: 40px;
+
   }
 }
 
