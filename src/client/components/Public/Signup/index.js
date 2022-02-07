@@ -99,11 +99,11 @@ class Signup extends Component {
 
     return (
       <div className={styles.container}>
+        <h1 className={styles.title}>ثبت نام</h1>
         <div>
           <Form
             inputs={inputs}
             submitFunction={this.signup}>
-            <h1>ثبت نام</h1>
           </Form>
           <Link to='/login'>حساب داری؟ وارد شو</Link>
         </div>
