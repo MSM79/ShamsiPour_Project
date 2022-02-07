@@ -100,6 +100,7 @@ class AddArticle extends Component {
   render() {
     return (
       <div className={styles.container}>
+        <h1 className={styles.title}>اضافه کردن مقاله</h1>
         <input
           type='text'
           placeholder='عنوان'
