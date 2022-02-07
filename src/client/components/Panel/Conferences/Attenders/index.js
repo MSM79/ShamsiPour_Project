@@ -76,7 +76,8 @@ class Attenders extends Component {
 
     return (
       <div className={styles.container}>
-        <h1>درباره کنفرانس</h1>
+      <h1 className={styles.title}>درباره کنفرانس</h1>
+
         <p>عنوان: {this.state.conference.title}</p>
         <p>شروع: {this.state.conference.start}</p>
         <p>اتمام: {this.state.conference.end}</p>
