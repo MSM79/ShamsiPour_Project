@@ -85,13 +85,29 @@ class Home extends Component {
     return (
       <div className={styles.container}>
         <div className={styles.intro}>
-          <img src='/static/images/qomosc.png' />
-          <h1>جامعه متن باز قم</h1>
-          <p>
-            جامعه متن باز قم با هدف فراهم کردن محیطی برای
-            به اشتراک گذاری دانش و تجربیات افرادی که در زمینه
-            های مختلف متن باز فعالیت میکنند تاسیس شده است
-          </p>
+          <div className={styles.gridcontainer}>
+            <div className={styles.firstdiv}>
+              <div></div>
+              <img src="https://digiato.com/wp-content/uploads/2022/02/Exynos-snapdragon.jpg" />
+              <p><a href="article1.html">در آستانه معرفی گلکس چرا استفاده از اسنپدراگون یا اگزینوس برای کاربران مهم است؟</a></p>
+            </div>
+            <div className={styles.secdiv}>
+              <div></div>
+              <img src="https://digiato.com/wp-content/uploads/2022/02/Facebook-EU.jpg" />
+              <p><a>متا: شاید مجبور به بستن فیسبوک و اینستاگرام در اروپا شویم</a></p>
+            </div>
+            <div>
+              <div></div>
+              <img src="https://digiato.com/wp-content/uploads/2022/02/Facebook-instagram-shutdown-EU.jpg" />
+              <p><a>گوز</a> </p>
+            </div>
+            <div>
+              <div></div>
+              <img src="https://digiato.com/wp-content/uploads/2020/12/instagram-reels.jpg" />
+              <p><a>Why choose React as a front-end Javascript library for your web app? </a></p>
+            </div>
+
+          </div>
         </div>
 
         {this.state.articles.length ?
@@ -110,14 +126,6 @@ class Home extends Component {
           )}
         </div>
 
-          <section className={styles.divrow}>
-            <div>اضافه کردن مقاله
-                <img src="/static/images/banner.png" />
-            </div>
-            <div>برای مشاهده همه مقالات کلیک کنید
-              <img src="/static/images/banner.png" />
-            </div>
-          </section>
 
 
         <Box>
