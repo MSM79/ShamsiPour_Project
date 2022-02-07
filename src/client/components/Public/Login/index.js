@@ -70,11 +70,12 @@ class Login extends Component {
 
     return (
       <div className={styles.container}>
+      <h1 className={styles.title}>ورود</h1>
+
         <div>
           <Form
             inputs={inputs}
             submitFunction={this.login}>
-            <h1>ورود</h1>
           </Form>
           <Link to='/recovery'>فراموشی رمز</Link>
           <p />

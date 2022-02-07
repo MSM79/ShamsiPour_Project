@@ -3,12 +3,19 @@
 
 :local(.container) {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  margin: 20px 0;
+
 
   input {
     .input;
+  }
+
+  :local(.title) {
+    .title();
+    margin-bottom: 10px;
   }
 
 }
