@@ -1,9 +1,9 @@
-# QOM Open Source Community Blog
+# Comma
 
 
 ## Run
 
-`git clone https://github.com/qomosc/blog.git`
+`git clone https://github.com/MSM79/ShamsiPour_Project.git`
 
 `cd blog`
 
