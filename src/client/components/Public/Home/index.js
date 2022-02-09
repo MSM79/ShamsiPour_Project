@@ -85,29 +85,11 @@ class Home extends Component {
     return (
       <div className={styles.container}>
         <div className={styles.intro}>
-          <div className={styles.gridcontainer}>
-            <div className={styles.firstdiv}>
-              <div></div>
-              <img src="https://digiato.com/wp-content/uploads/2022/02/Exynos-snapdragon.jpg" />
-              <p><a href="article1.html">در آستانه معرفی گلکس چرا استفاده از اسنپدراگون یا اگزینوس برای کاربران مهم است؟</a></p>
-            </div>
-            <div className={styles.secdiv}>
-              <div></div>
-              <img src="https://digiato.com/wp-content/uploads/2022/02/Facebook-EU.jpg" />
-              <p><a>متا: شاید مجبور به بستن فیسبوک و اینستاگرام در اروپا شویم</a></p>
-            </div>
-            <div>
-              <div></div>
-              <img src="https://digiato.com/wp-content/uploads/2022/02/Facebook-instagram-shutdown-EU.jpg" />
-              <p><a>گوز</a> </p>
-            </div>
-            <div>
-              <div></div>
-              <img src="https://digiato.com/wp-content/uploads/2020/12/instagram-reels.jpg" />
-              <p><a>Why choose React as a front-end Javascript library for your web app? </a></p>
-            </div>
-
-          </div>
+          <img src='/static/images/logo2.png' />
+          <h1>کــاما</h1>
+          <p>
+          کاما با هدف فراهم کردن محیطی برای به اشتراک گذاری دانش و زمینه های مختلف تکنولوژی تاسیس شده است
+          </p>
         </div>
 
         {this.state.articles.length ?
