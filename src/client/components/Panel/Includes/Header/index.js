@@ -111,7 +111,10 @@ class Header extends Component {
 
     return (
       <header className={styles.header}>
-        <Link to='/'>جامعه متن باز قم</Link>
+      <div className={styles.headerlogo}>
+        <img src='/static/images/logo3.png' />
+        <Link to='/'>کاما</Link>
+      </div>
 
         <div
           className={`icon icon-bars ${styles.linksButton}`}

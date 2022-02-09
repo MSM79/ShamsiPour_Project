@@ -4,21 +4,15 @@
 
 :local(.header) {
   .header();
-    > a {
-      font-family: IRANSans;
-      font-weight: bolder;
-      color: #fff;
-      font-size: 30px;
-      z-index: 2;
-      text-shadow: 1px 3px 3px rgba(0,0,0,0.3);
-      transition: 0.3s;
+}
 
-      &:active, &:hover {
-        text-shadow:1px 2px 2px rgba(0,0,0,0.1);
-        transform: translate3d(0,-1px,0);
-        transition: all 0.2s ease;
-      }
-    }
+:local(.headerlogo) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 70px;
+  }
 }
 
 :local(.linksButton) {

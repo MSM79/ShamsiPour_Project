@@ -9,7 +9,7 @@ class About extends Component {
     return (
       <div className={styles.container}>
         <div className={styles.top}>
-          <h1> درباره جامعه متن باز قم </h1>
+          <h1> درباره کاما </h1>
         </div>
 
 

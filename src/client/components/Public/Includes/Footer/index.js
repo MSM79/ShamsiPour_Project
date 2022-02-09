@@ -54,7 +54,7 @@ class Footer extends Component {
         </div>
         <p>
           این پروژه تماما متن باز بوده و شما با مراجعه به
-          <a href='https://github.com/qomosc/blog'> این صفحه در گیتهاب </a>
+          <a href='https://github.com/MSM79/ShamsiPour_Project'> این صفحه در گیتهاب </a>
           قادر به همکاری و مشارکت هستید.
         </p>
       </footer>
