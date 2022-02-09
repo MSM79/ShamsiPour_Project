@@ -29,7 +29,7 @@ class Header extends Component {
     const links = [
       {
         to: '/conferences',
-        text:  'رویداد'
+        text:  'رویداد ها'
       },
       {
         to: '/articles',
@@ -63,7 +63,10 @@ class Header extends Component {
 
     return (
       <header className={styles.header}>
-        <Link to='/'>جامعه متن باز قم</Link>
+        <div className={styles.headerlogo}>
+          <img src='/static/images/logo3.png' />
+          <Link to='/'>کاما</Link>
+        </div>
 
         <ul>
           {links.map((v, i) =>
