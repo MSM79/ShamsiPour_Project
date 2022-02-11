@@ -14,18 +14,28 @@
 :local(.allarticle) {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  padding: 10px;
+  justify-content: center;
+  flex-direction:row;
   flex-wrap: wrap;
 
   > div {
+    width: 23%;
     margin: 20px;
   }
 
 }
 
 @media (min-width: 120px) and (max-width: 580px) {
-  :local(.container) > div {
-    width: 90%;
+
+
+:local(.allarticle) {
+    flex-direction: column;
+    margin-top: 20px;
+
+    > div {
+      width: 95%;
+      margin: 5px auto;
+    }
   }
+
 }

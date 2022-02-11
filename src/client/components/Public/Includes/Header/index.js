@@ -86,7 +86,7 @@ class Header extends Component {
 
             <ul>
               {links.map((v, i) =>
-                <li key={i}><NLink {...v} /></li>
+                <li key={i} onClick={this.hideSlideOut}><NLink {...v} /></li>
               )}
             </ul>
           </div>

@@ -21,6 +21,7 @@ class ArticlesHome extends Component {
           minutes
           avatar
           title
+          content
           _id
 
           user {
@@ -54,14 +55,14 @@ class ArticlesHome extends Component {
           <h1>مقاله ای وجود ندارد</h1>
         }
           <div className={styles.allarticle}>
-        {this.state.articles.map((v, i) =>
-          <Article
-            key={i}
-            user={{ ...v.user }}
-            art={{ ...v }}
-            id={v._id}
-          />
-        )}
+            {this.state.articles.map((v, i) =>
+              <Article
+                key={i}
+                user={{ ...v.user }}
+                art={{ ...v }}
+                id={v._id}
+              />
+            )}
         </div>
       </div>
     );
