@@ -1,7 +1,7 @@
 {
-  "name": "qomosc",
+  "name": "Comma",
   "version": "2.0.0",
-  "description": "QOM Open Source Community Website",
+  "description": "Comma",
   "main": "build/app.js",
   "scripts": {
     "dev": "gulp dev",
@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qomosc/blog.git"
+    "url": "git+https://github.com/MSM79/ShamsiPour_Project.git"
   },
   "keywords": [
     "blog"
   ],
-  "author": "Matin Kaboli <matinkaboli@aol.com>",
+  "author": "Mohammad Seyfi Marandi <mohammadmarandi89@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.2",
@@ -86,8 +86,3 @@
     "webpack-node-externals": "^1.7.2",
     "webpack-stream": "^4.0.0"
   },
-  "bugs": {
-    "url": "https://github.com/qomosc/blog/issues"
-  },
-  "homepage": "https://github.com/qomosc/blog#readme"
-}
